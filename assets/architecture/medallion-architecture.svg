@@ -1,84 +1,85 @@
-<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Arquitetura Medallion do projeto</title>
-  <desc id="desc">Fluxo de dados Bronze, Silver, Gold, ontologia, modelo semântico e data agent.</desc>
+<svg width="1400" height="620" viewBox="0 0 1400 620" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitetura da solução de dados</title>
+  <desc id="desc">Fluxo da origem dos dados até o usuário final, com Bronze, Silver, Gold, modelo semântico, ontologia e Data Agent.</desc>
 
   <defs>
     <style>
       .title { font: 700 30px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
-      .subtitle { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #334155; }
-      .label { font: 600 20px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
-      .small { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #475569; }
-      .box { fill: #ffffff; stroke: #0f172a; stroke-width: 2; rx: 18; }
-      .bronze { fill: #fff1e6; stroke: #b45309; stroke-width: 2; }
-      .silver { fill: #eef6ff; stroke: #2563eb; stroke-width: 2; }
-      .gold { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
-      .semantic { fill: #f5f3ff; stroke: #7c3aed; stroke-width: 2; }
-      .ontology { fill: #fff1f2; stroke: #be185d; stroke-width: 2; }
-      .agent { fill: #ecfeff; stroke: #0f766e; stroke-width: 2; }
-      .user { fill: #f8fafc; stroke: #475569; stroke-width: 2; }
+      .subtitle { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+      .box-label { font: 700 22px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .box-text { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .main-box { stroke-width: 2.5; }
+      .bronze { fill: #fff7ed; stroke: #c2410c; }
+      .silver { fill: #eff6ff; stroke: #2563eb; }
+      .gold { fill: #ecfdf5; stroke: #059669; }
+      .semantic { fill: #f5f3ff; stroke: #7c3aed; }
+      .ontology { fill: #fdf2f8; stroke: #db2777; }
+      .agent { fill: #ecfeff; stroke: #0f766e; }
+      .user { fill: #f8fafc; stroke: #475569; }
       .arrow { stroke: #475569; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
-      .arrowSoft { stroke: #64748b; stroke-width: 2.5; fill: none; marker-end: url(#arrowheadSoft); }
+      .thin-arrow { stroke: #64748b; stroke-width: 2.5; fill: none; marker-end: url(#arrowheadThin); }
     </style>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
     </marker>
-    <marker id="arrowheadSoft" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <marker id="arrowheadThin" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
-    </marker>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
     </marker>
   </defs>
 
-  <rect x="0" y="0" width="1200" height="720" fill="#f8fafc"/>
-  <text x="600" y="48" text-anchor="middle" class="title">Arquitetura do projeto Data AI Saturday VIX 2026</text>
-  <text x="600" y="78" text-anchor="middle" class="subtitle">Medallion Architecture + Modelo Semântico + Data Agent</text>
+  <rect width="1400" height="620" fill="#f8fafc"/>
 
-  <rect x="60" y="150" width="180" height="120" class="box bronze"/>
-  <text x="150" y="195" text-anchor="middle" class="label">Bronze</text>
-  <text x="150" y="222" text-anchor="middle" class="small">Dados brutos</text>
-  <text x="150" y="242" text-anchor="middle" class="small">Fontes originais / CSV</text>
+  <text x="700" y="46" text-anchor="middle" class="title">Arquitetura da solução de dados</text>
+  <text x="700" y="76" text-anchor="middle" class="subtitle">Bronze → Silver → Gold → Modelo semântico → Ontologia → Data Agent</text>
 
-  <rect x="310" y="150" width="180" height="120" class="box silver"/>
-  <text x="400" y="195" text-anchor="middle" class="label">Silver</text>
-  <text x="400" y="222" text-anchor="middle" class="small">Limpeza</text>
-  <text x="400" y="242" text-anchor="middle" class="small">Padronização + deduplicação</text>
+  <rect x="60" y="120" width="170" height="120" rx="16" class="main-box bronze"/>
+  <text x="145" y="165" text-anchor="middle" class="box-label">Origem</text>
+  <text x="145" y="192" text-anchor="middle" class="box-text">Arquivos CSV</text>
+  <text x="145" y="212" text-anchor="middle" class="box-text">Dados brutos</text>
 
-  <rect x="560" y="150" width="180" height="120" class="box gold"/>
-  <text x="650" y="195" text-anchor="middle" class="label">Gold</text>
-  <text x="650" y="222" text-anchor="middle" class="small">Modelo analítico</text>
-  <text x="650" y="242" text-anchor="middle" class="small">Dimensões + tabela fato</text>
+  <rect x="270" y="120" width="170" height="120" rx="16" class="main-box bronze"/>
+  <text x="355" y="165" text-anchor="middle" class="box-label">Bronze</text>
+  <text x="355" y="192" text-anchor="middle" class="box-text">Ingestão</text>
+  <text x="355" y="212" text-anchor="middle" class="box-text">Rastreabilidade</text>
 
-  <rect x="810" y="150" width="160" height="120" class="box semantic"/>
-  <text x="890" y="195" text-anchor="middle" class="label">Modelo</text>
-  <text x="890" y="222" text-anchor="middle" class="small">Semântico</text>
-  <text x="890" y="242" text-anchor="middle" class="small">Base para relatórios</text>
+  <rect x="480" y="120" width="170" height="120" rx="16" class="main-box silver"/>
+  <text x="565" y="165" text-anchor="middle" class="box-label">Silver</text>
+  <text x="565" y="192" text-anchor="middle" class="box-text">Limpeza</text>
+  <text x="565" y="212" text-anchor="middle" class="box-text">Padronização</text>
 
-  <rect x="430" y="360" width="260" height="150" class="box ontology"/>
-  <text x="560" y="402" text-anchor="middle" class="label">Ontologia de negócio</text>
-  <text x="560" y="432" text-anchor="middle" class="small">Derivada do modelo semântico</text>
-  <text x="560" y="454" text-anchor="middle" class="small">Customer • Product</text>
-  <text x="560" y="476" text-anchor="middle" class="small">Date • Sales</text>
-  <text x="560" y="498" text-anchor="middle" class="small">Glossário de domínio</text>
+  <rect x="690" y="120" width="170" height="120" rx="16" class="main-box gold"/>
+  <text x="775" y="165" text-anchor="middle" class="box-label">Gold</text>
+  <text x="775" y="192" text-anchor="middle" class="box-text">Modelo analítico</text>
+  <text x="775" y="212" text-anchor="middle" class="box-text">Dimensões + fato</text>
 
-  <rect x="750" y="360" width="300" height="150" class="box agent"/>
-  <text x="900" y="402" text-anchor="middle" class="label">Data Agent</text>
-  <text x="900" y="432" text-anchor="middle" class="small">Interface principal do usuário</text>
-  <text x="900" y="454" text-anchor="middle" class="small">Perguntas em linguagem natural</text>
-  <text x="900" y="476" text-anchor="middle" class="small">Consultas sobre vendas e desempenho</text>
-  <text x="900" y="498" text-anchor="middle" class="small">Consulta direta ao contexto semântico</text>
+  <rect x="900" y="120" width="200" height="120" rx="16" class="main-box semantic"/>
+  <text x="1000" y="165" text-anchor="middle" class="box-label">Modelo semântico</text>
+  <text x="1000" y="192" text-anchor="middle" class="box-text">Estrutura para análise</text>
+  <text x="1000" y="212" text-anchor="middle" class="box-text">Relatórios e consultas</text>
 
-  <rect x="60" y="565" width="990" height="90" class="box user"/>
-  <text x="590" y="605" text-anchor="middle" class="label">Usuário final</text>
-  <text x="590" y="633" text-anchor="middle" class="small">Interage principalmente pelo Data Agent, usando o modelo semântico e a ontologia como suporte de entendimento do negócio</text>
+  <rect x="930" y="300" width="220" height="120" rx="16" class="main-box ontology"/>
+  <text x="1040" y="345" text-anchor="middle" class="box-label">Ontologia</text>
+  <text x="1040" y="372" text-anchor="middle" class="box-text">Derivada do modelo</text>
+  <text x="1040" y="392" text-anchor="middle" class="box-text">Customer • Product • Date • Sales</text>
 
-  <path d="M240 210 H310" class="arrow"/>
-  <path d="M490 210 H560" class="arrow"/>
-  <path d="M740 210 H810" class="arrow"/>
+  <rect x="650" y="300" width="220" height="120" rx="16" class="main-box agent"/>
+  <text x="760" y="345" text-anchor="middle" class="box-label">Data Agent</text>
+  <text x="760" y="372" text-anchor="middle" class="box-text">Interação em linguagem natural</text>
+  <text x="760" y="392" text-anchor="middle" class="box-text">Consulta de negócio</text>
 
-  <path d="M650 270 L650 360" class="arrowSoft"/>
-  <path d="M690 430 H750" class="arrowSoft"/>
-  <path d="M900 510 L900 565" class="arrowSoft"/>
-  <path d="M760 510 Q610 540 470 565" class="arrowSoft"/>
-  <path d="M690 500 Q770 530 915 565" class="arrowSoft"/>
+  <rect x="150" y="470" width="1110" height="90" rx="18" class="main-box user"/>
+  <text x="705" y="512" text-anchor="middle" class="box-label">Usuário final</text>
+  <text x="705" y="534" text-anchor="middle" class="box-text">Consulta o negócio por meio do Data Agent, com apoio do modelo semântico e da ontologia</text>
+
+  <path d="M230 180 H270" class="arrow"/>
+  <path d="M440 180 H480" class="arrow"/>
+  <path d="M650 180 H690" class="arrow"/>
+  <path d="M860 180 H900" class="arrow"/>
+
+  <path d="M1000 240 L1000 300" class="thin-arrow"/>
+  <path d="M1000 420 L1000 470" class="thin-arrow"/>
+  <path d="M930 360 H870" class="thin-arrow"/>
+  <path d="M650 360 H610" class="thin-arrow"/>
+  <path d="M760 420 L760 470" class="thin-arrow"/>
+  <path d="M650 420 Q520 450 360 470" class="thin-arrow"/>
 </svg>
