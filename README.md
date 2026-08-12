@@ -56,6 +56,27 @@ Além disso, a solução inclui:
 - agente de dados para consulta em linguagem natural
 - modelo semântico para exploração analítica
 
+```mermaid
+flowchart LR
+    A[Arquivos de origem\nCSV / Dados brutos] --> B[Bronze\nLakehouse_Bronze]
+    B --> C[Silver\nLimpeza, schema, deduplicação]
+    C --> D[Gold\nDimensões + tabela fato]
+    D --> E[Modelo Semântico\nPower BI / Análise]
+    D --> F[Ontologia de Negócio\nCustomer, Product, Date, Sales]
+    F --> G[Data Agent\nPerguntas em linguagem natural]
+    E --> G
+    G --> H[Usuário / Analista / Negócio]
+
+    subgraph Fabric
+        B
+        C
+        D
+        E
+        F
+        G
+    end
+```
+
 ## Como usar
 
 1. Abra a pasta [Demo-Medallion-Architecture-Data-Agent](Demo-Medallion-Architecture-Data-Agent).
