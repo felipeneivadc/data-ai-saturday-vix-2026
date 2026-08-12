@@ -1,0 +1,95 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "38216418496325",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Sales",
+  "entityIdParts": [
+    "7909112848638998708",
+    "7909112873489311123"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "7909112848638998708",
+      "name": "SalesOrderNumber",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909112873489311123",
+      "name": "SalesOrderLineNumber",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909112901769547443",
+      "name": "CustomerID",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909112924678913390",
+      "name": "ProductID",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909112942043785236",
+      "name": "OrderDate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime"
+    },
+    {
+      "id": "7909112971173676322",
+      "name": "Quantity",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909112990226121837",
+      "name": "UnitPrice",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "7909113016028620748",
+      "name": "Tax",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    },
+    {
+      "id": "7909113037238448350",
+      "name": "SalesAmount",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "Double"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "Venda",
+      "Pedido",
+      "Item de Pedido",
+      "Transa\u00E7\u00E3o"
+    ],
+    "description": "Representa uma linha de item vendido dentro de um pedido, incluindo quantidade, pre\u00E7o e valor total (com impostos).",
+    "customAttributes": {
+      "Business owner": "Felipe Neiva",
+      "Unit of measurement (SalesAmount)": "BRL",
+      "Grain": "1 row per order line"
+    }
+  },
+  "untypedProperties": []
+}

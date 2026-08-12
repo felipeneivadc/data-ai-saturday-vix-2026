@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "601444fe-9f7e-a6f6-4637-27635fe0ada8",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "Ontology_Sales_Gold",
+  "type": "ontology",
+  "userDescription": null,
+  "metadata": {},
+  "elements": [
+    {
+      "id": "Customer",
+      "is_selected": true,
+      "display_name": "Customer",
+      "type": "ontology.entity",
+      "description": "CustomerName,Email,First,Last,CustomerID",
+      "children": []
+    },
+    {
+      "id": "Sales",
+      "is_selected": true,
+      "display_name": "Sales",
+      "type": "ontology.entity",
+      "description": "SalesOrderNumber,SalesOrderLineNumber,CustomerID,ProductID,OrderDate,Quantity,UnitPrice,Tax,SalesAmount",
+      "children": []
+    },
+    {
+      "id": "Date",
+      "is_selected": true,
+      "display_name": "Date",
+      "type": "ontology.entity",
+      "description": "OrderDate,Day,Month,Year,mmmyyyy,yyyymm,DateKey",
+      "children": []
+    },
+    {
+      "id": "Product",
+      "is_selected": true,
+      "display_name": "Product",
+      "type": "ontology.entity",
+      "description": "Item,ItemName,ItemSize,ProductID",
+      "children": []
+    }
+  ]
+}

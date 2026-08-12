@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "78eb6e7b-8fcd-4e7d-a747-bb6a5107925c",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "SalesOrderNumber",
+        "targetPropertyId": "7909112848638998708"
+      },
+      {
+        "sourceColumnName": "SalesOrderLineNumber",
+        "targetPropertyId": "7909112873489311123"
+      },
+      {
+        "sourceColumnName": "CustomerID",
+        "targetPropertyId": "7909112901769547443"
+      },
+      {
+        "sourceColumnName": "ProductID",
+        "targetPropertyId": "7909112924678913390"
+      },
+      {
+        "sourceColumnName": "OrderDate",
+        "targetPropertyId": "7909112942043785236"
+      },
+      {
+        "sourceColumnName": "Quantity",
+        "targetPropertyId": "7909112971173676322"
+      },
+      {
+        "sourceColumnName": "UnitPrice",
+        "targetPropertyId": "7909112990226121837"
+      },
+      {
+        "sourceColumnName": "Tax",
+        "targetPropertyId": "7909113016028620748"
+      },
+      {
+        "sourceColumnName": "SalesAmount",
+        "targetPropertyId": "7909113037238448350"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "54683c9c-0b0f-8329-436e-29a4801ecffe",
+      "sourceTableName": "factsales_gold",
+      "sourceSchema": "dbo"
+    }
+  }
+}

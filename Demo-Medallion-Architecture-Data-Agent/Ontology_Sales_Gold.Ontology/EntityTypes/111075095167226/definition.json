@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "111075095167226",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Product",
+  "entityIdParts": [
+    "7909113370983247938"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "7909113300821574232",
+      "name": "Item",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909113321396366903",
+      "name": "ItemName",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909113348393719189",
+      "name": "ItemSize",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909113370983247938",
+      "name": "ProductID",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "Produto",
+      "Item",
+      "Artigo",
+      "Mercadoria"
+    ],
+    "description": "Representa um item de cat\u00E1logo vendido, incluindo nome e varia\u00E7\u00E3o de tamanho.",
+    "customAttributes": {
+      "Business owner": "Felipe Neiva",
+      "Data quality": "Complete",
+      "Source system": "orders.csv"
+    }
+  },
+  "untypedProperties": []
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "7909340310219591556",
+  "name": "includesProduct",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "38216418496325"
+  },
+  "target": {
+    "entityTypeId": "111075095167226"
+  },
+  "semanticEnrichment": {
+    "description": "Indica qual produto foi vendido em cada linha de pedido.",
+    "customAttributes": {}
+  }
+}

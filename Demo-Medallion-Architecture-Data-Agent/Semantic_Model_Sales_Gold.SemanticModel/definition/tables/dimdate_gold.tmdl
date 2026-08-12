@@ -1,0 +1,79 @@
+table dimdate_gold
+	lineageTag: 89bbef59-9ca4-40c3-8764-13627595cc99
+	sourceLineageTag: [dbo].[dimdate_gold]
+
+	column OrderDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 6282efcd-f976-4a8d-a652-7f3f677cd308
+		sourceLineageTag: OrderDate
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: cdfa2b3e-9ca6-4b6a-a10a-4e58b958cbc4
+		sourceLineageTag: Day
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: d60ec73c-c70b-4171-994c-607f39958f14
+		sourceLineageTag: Month
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 1bc3cee5-b81f-43f2-ad03-b14d7f4e6514
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column mmmyyyy
+		dataType: string
+		lineageTag: b3c13214-e308-4e3b-85fb-ae63c08a1c6f
+		sourceLineageTag: mmmyyyy
+		summarizeBy: none
+		sourceColumn: mmmyyyy
+
+		annotation SummarizationSetBy = Automatic
+
+	column yyyymm
+		dataType: string
+		lineageTag: b7905374-eb60-4c30-8df8-f88b9bf017f1
+		sourceLineageTag: yyyymm
+		summarizeBy: none
+		sourceColumn: yyyymm
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ba93492-db5c-40f3-b268-6b2b6f534b6a
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimdate_gold = entity
+		mode: directLake
+		source
+			entityName: dimdate_gold
+			schemaName: dbo
+			expressionSource: 'DirectLake - Lakehouse_Gold'
+

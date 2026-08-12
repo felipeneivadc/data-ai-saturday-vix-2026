@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "7909363912519255189",
+  "name": "occurredOn",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "38216418496325"
+  },
+  "target": {
+    "entityTypeId": "74644679477739"
+  },
+  "semanticEnrichment": {
+    "description": "Indica a data em que o pedido de venda foi realizado.",
+    "customAttributes": {}
+  }
+}

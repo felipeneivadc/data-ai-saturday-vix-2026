@@ -1,0 +1,17 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/relationshipType/1.0.0/schema.json",
+  "namespace": "usertypes",
+  "id": "7909314887646825440",
+  "name": "placedBy",
+  "namespaceType": "Imported",
+  "source": {
+    "entityTypeId": "38216418496325"
+  },
+  "target": {
+    "entityTypeId": "277001243330294"
+  },
+  "semanticEnrichment": {
+    "description": "Indica qual cliente realizou o pedido de venda.",
+    "customAttributes": {}
+  }
+}

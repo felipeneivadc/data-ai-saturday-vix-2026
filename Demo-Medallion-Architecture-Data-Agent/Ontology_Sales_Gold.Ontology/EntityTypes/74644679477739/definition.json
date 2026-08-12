@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "74644679477739",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Date",
+  "entityIdParts": [
+    "8610735353532954310"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "7909113126786047946",
+      "name": "OrderDate",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "DateTime"
+    },
+    {
+      "id": "7909113154279566153",
+      "name": "Day",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909113180584684234",
+      "name": "Month",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909113203879572677",
+      "name": "Year",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    },
+    {
+      "id": "7909113227429807872",
+      "name": "mmmyyyy",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909113247434811082",
+      "name": "yyyymm",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "8610735353532954310",
+      "name": "DateKey",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "Data",
+      "Dia",
+      "Calend\u00E1rio",
+      "Per\u00EDodo"
+    ],
+    "description": "Representa um dia \u00FAnico do calend\u00E1rio de vendas, usado para agrupar e filtrar pedidos por per\u00EDodo.",
+    "customAttributes": {
+      "Business owner": "Felipe Neiva",
+      "Data quality": "Complete",
+      "Grain": "1 row per day"
+    }
+  },
+  "untypedProperties": []
+}

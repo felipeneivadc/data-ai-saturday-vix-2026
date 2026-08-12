@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "6918b184-25a5-4724-bbe9-fe5a971f1107",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "OrderDate",
+        "targetPropertyId": "7909113126786047946"
+      },
+      {
+        "sourceColumnName": "Day",
+        "targetPropertyId": "7909113154279566153"
+      },
+      {
+        "sourceColumnName": "Month",
+        "targetPropertyId": "7909113180584684234"
+      },
+      {
+        "sourceColumnName": "Year",
+        "targetPropertyId": "7909113203879572677"
+      },
+      {
+        "sourceColumnName": "mmmyyyy",
+        "targetPropertyId": "7909113227429807872"
+      },
+      {
+        "sourceColumnName": "yyyymm",
+        "targetPropertyId": "7909113247434811082"
+      },
+      {
+        "sourceColumnName": "DateKey",
+        "targetPropertyId": "8610735353532954310"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "54683c9c-0b0f-8329-436e-29a4801ecffe",
+      "sourceTableName": "dimdate_gold",
+      "sourceSchema": "dbo"
+    }
+  }
+}

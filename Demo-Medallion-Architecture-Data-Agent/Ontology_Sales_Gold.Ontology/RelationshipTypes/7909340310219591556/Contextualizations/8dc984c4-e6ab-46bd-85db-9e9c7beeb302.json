@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "8dc984c4-e6ab-46bd-85db-9e9c7beeb302",
+  "dataBindingTable": {
+    "workspaceId": "00000000-0000-0000-0000-000000000000",
+    "itemId": "54683c9c-0b0f-8329-436e-29a4801ecffe",
+    "sourceTableName": "factsales_gold",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "SalesOrderNumber",
+      "targetPropertyId": "7909112848638998708"
+    },
+    {
+      "sourceColumnName": "SalesOrderLineNumber",
+      "targetPropertyId": "7909112873489311123"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "ProductID",
+      "targetPropertyId": "7909113370983247938"
+    }
+  ]
+}

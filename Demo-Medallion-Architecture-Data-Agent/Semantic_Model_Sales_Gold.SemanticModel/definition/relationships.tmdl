@@ -1,0 +1,12 @@
+relationship 9b774356-c127-e42f-c3da-fed0c306ae33
+	fromColumn: factsales_gold.CustomerID
+	toColumn: dimcustomer_gold.CustomerID
+
+relationship c3bb6152-53fb-4938-e478-9226872cd415
+	fromColumn: factsales_gold.ProductID
+	toColumn: dimproduct_gold.ProductID
+
+relationship e0b60a78-955c-3839-51ed-14da887184d1
+	fromColumn: factsales_gold.DateKey
+	toColumn: dimdate_gold.DateKey
+

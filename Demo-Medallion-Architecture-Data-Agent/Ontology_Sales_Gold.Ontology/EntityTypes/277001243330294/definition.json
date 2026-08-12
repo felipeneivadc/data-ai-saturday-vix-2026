@@ -1,0 +1,64 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/entityType/1.0.0/schema.json",
+  "id": "277001243330294",
+  "namespace": "usertypes",
+  "baseEntityTypeId": null,
+  "name": "Customer",
+  "entityIdParts": [
+    "7909112617973734833"
+  ],
+  "displayNamePropertyId": null,
+  "namespaceType": "Imported",
+  "visibility": "Visible",
+  "properties": [
+    {
+      "id": "7909112486437153134",
+      "name": "CustomerName",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909112542409582561",
+      "name": "Email",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909112568341120627",
+      "name": "First",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909112591232705177",
+      "name": "Last",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "String"
+    },
+    {
+      "id": "7909112617973734833",
+      "name": "CustomerID",
+      "redefines": null,
+      "baseTypeNamespaceType": null,
+      "valueType": "BigInt"
+    }
+  ],
+  "timeseriesProperties": [],
+  "semanticEnrichment": {
+    "synonyms": [
+      "Cliente",
+      "Comprador",
+      "Consumidor"
+    ],
+    "description": "Representa um cliente \u00FAnico que realizou um ou mais pedidos de venda.",
+    "customAttributes": {
+      "Business owner": "Felipe Neiva",
+      "Data quality": "Complete"
+    }
+  },
+  "untypedProperties": []
+}
