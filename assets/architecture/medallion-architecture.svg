@@ -1,0 +1,76 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Arquitetura Medallion do projeto</title>
+  <desc id="desc">Fluxo de dados Bronze, Silver, Gold, ontologia, modelo semântico e data agent.</desc>
+
+  <defs>
+    <style>
+      .title { font: 700 30px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 600 18px 'Segoe UI', Arial, sans-serif; fill: #334155; }
+      .label { font: 600 20px 'Segoe UI', Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 15px 'Segoe UI', Arial, sans-serif; fill: #475569; }
+      .box { fill: #ffffff; stroke: #0f172a; stroke-width: 2; rx: 18; }
+      .bronze { fill: #fff7ed; stroke: #c2410c; stroke-width: 2; }
+      .silver { fill: #eff6ff; stroke: #2563eb; stroke-width: 2; }
+      .gold { fill: #ecfdf5; stroke: #059669; stroke-width: 2; }
+      .semantic { fill: #f5f3ff; stroke: #7c3aed; stroke-width: 2; }
+      .ontology { fill: #fdf2f8; stroke: #db2777; stroke-width: 2; }
+      .agent { fill: #ecfeff; stroke: #0891b2; stroke-width: 2; }
+      .arrow { stroke: #475569; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="720" fill="#f8fafc"/>
+  <text x="600" y="48" text-anchor="middle" class="title">Arquitetura do projeto Data AI Saturday VIX 2026</text>
+  <text x="600" y="78" text-anchor="middle" class="subtitle">Medallion Architecture + Ontologia + Data Agent</text>
+
+  <rect x="60" y="150" width="180" height="120" class="box bronze"/>
+  <text x="150" y="195" text-anchor="middle" class="label">Bronze</text>
+  <text x="150" y="222" text-anchor="middle" class="small">Arquivos brutos</text>
+  <text x="150" y="242" text-anchor="middle" class="small">CSV / fontes originais</text>
+
+  <rect x="310" y="150" width="180" height="120" class="box silver"/>
+  <text x="400" y="195" text-anchor="middle" class="label">Silver</text>
+  <text x="400" y="222" text-anchor="middle" class="small">Limpeza</text>
+  <text x="400" y="242" text-anchor="middle" class="small">Padronização + deduplicação</text>
+
+  <rect x="560" y="150" width="180" height="120" class="box gold"/>
+  <text x="650" y="195" text-anchor="middle" class="label">Gold</text>
+  <text x="650" y="222" text-anchor="middle" class="small">Dimensões</text>
+  <text x="650" y="242" text-anchor="middle" class="small">Tabela fato + métricas</text>
+
+  <rect x="810" y="150" width="160" height="120" class="box semantic"/>
+  <text x="890" y="195" text-anchor="middle" class="label">Modelo</text>
+  <text x="890" y="222" text-anchor="middle" class="small">Semântico</text>
+  <text x="890" y="242" text-anchor="middle" class="small">Power BI / análise</text>
+
+  <rect x="470" y="360" width="240" height="140" class="box ontology"/>
+  <text x="590" y="402" text-anchor="middle" class="label">Ontologia de negócio</text>
+  <text x="590" y="432" text-anchor="middle" class="small">Customer</text>
+  <text x="590" y="454" text-anchor="middle" class="small">Product</text>
+  <text x="590" y="476" text-anchor="middle" class="small">Date</text>
+  <text x="590" y="498" text-anchor="middle" class="small">Sales</text>
+
+  <rect x="760" y="360" width="290" height="140" class="box agent"/>
+  <text x="905" y="402" text-anchor="middle" class="label">Data Agent</text>
+  <text x="905" y="432" text-anchor="middle" class="small">Perguntas em linguagem natural</text>
+  <text x="905" y="454" text-anchor="middle" class="small">Consultas sobre vendas</text>
+  <text x="905" y="476" text-anchor="middle" class="small">Clientes, produtos e períodos</text>
+
+  <rect x="60" y="560" width="990" height="90" class="box" fill="#ffffff"/>
+  <text x="590" y="600" text-anchor="middle" class="label">Usuário / Analista / Negócio</text>
+  <text x="590" y="628" text-anchor="middle" class="small">Consulta, interpreta e toma decisões com base na camada analítica governada por semântica de domínio</text>
+
+  <path d="M240 210 H310" class="arrow"/>
+  <path d="M490 210 H560" class="arrow"/>
+  <path d="M740 210 H810" class="arrow"/>
+
+  <path d="M650 270 L650 360" class="arrow"/>
+  <path d="M740 430 H760" class="arrow"/>
+  <path d="M905 500 L905 560" class="arrow"/>
+
+  <path d="M710 500 Q770 525 860 560" class="arrow"/>
+  <path d="M470 500 Q405 525 295 560" class="arrow"/>
+</svg>
